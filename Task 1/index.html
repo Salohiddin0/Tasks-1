@@ -4,15 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Task 1</title>
 </head>
 
 <body>
-    <h1>Task 1</h1>
-    <div id="root">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, at.
+    <div class="container">
+        <h2>Multi-Step Form</h2>
+        <div class="step-indicator">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+        <div class="step active" id="step1">
+            <label for="name">Your Name</label>
+            <input id="name" placeholder="Name">
+        </div>
+        <div class="step" id="step2">
+            <label for="email">Your Email</label>
+            <input id="email" placeholder="Email">
+        </div>
+        <div class="step" id="step3">
+            <label for="phone">Your Phone</label>
+            <input id="phone" placeholder="Phone">
+        </div>
+        <div class="buttons">
+            <button id="prev-btn" type="button" disabled>Pre</button>
+            <button id="next-btn">Next</button>
+        </div>
+        <span id="result"></span>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="main.js"></script>
 
 </html>
